@@ -1,8 +1,9 @@
 const div = document.querySelector('.contenedor');
-div.addEventListener('click', function(){
-
-alert('Hola soy el div');
-
+div.addEventListener('click', function(event){
+if(event.target!==document.querySelector('.boton')){
+    alert('Hola soy el div');
+}
+ 
 });
 
 
